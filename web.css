@@ -1,0 +1,96 @@
+body {
+  font-family: Arial;
+  background: white;
+  margin: 0;
+  padding: 0; 
+  text-align: center;
+}
+
+header {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  width: 100%;          
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 50px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #006666;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.phim-container {
+  display: grid;
+  grid-template-columns: repeat(6, 180px);
+  gap: 15px;
+  justify-content: center;
+  margin: 20px auto;
+  border: 3px solid gray;   
+  padding: 20px;              
+  border-radius: 10px;        
+  background-color: gray;    
+  display: inline-grid;
+}
+
+.phim {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.phim img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.phim h3 {
+  margin: 10px 5px;
+  font-size: 16px;
+}
+
+.phim p {
+  margin: 0 0 10px;
+  color: black;
+}
+
+.phim a {
+  display: inline-block;
+  background: #0b76ff;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.phim a:hover {
+  background: #095ed6;
+}
+
+@media (max-width: 600px) {
+  .phim-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
